@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café La Arábica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfaf6;
+      color: #333;
+    }
+    header {
+      background-color: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-bottom: 4px solid #d9b382;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .accordion {
+      margin-top: 1rem;
+    }
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+    }
+    .accordion-title {
+      cursor: pointer;
+      padding: 1rem;
+      background: #f2e8dc;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      transition: background 0.3s;
+    }
+    .accordion-title:hover {
+      background: #e8d7c6;
+    }
+    .accordion-content {
+      display: none;
+      padding: 0.5rem 1rem;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea, select {
+      padding: 0.7rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #6f4e37;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #5c3e2d;
+    }
+    img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 768px) {
+      section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Café La Arábica</h1>
+    <p>Pasión por el buen café</p>
+  </header>
+
+  <section class="card">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos una empresa tostadora y distribuidora de café ubicada en el estado de Colima, México. Distribuimos café en Colima y realizamos envíos a todo el país. Nuestro café proviene de altitudes superiores a los 1000 metros, lo que garantiza su alta calidad. Nos adaptamos al tipo de tostado que nuestros clientes requieran y estamos comprometidos con la excelencia.</p>
+  </section>
+
+  <section class="card">
+    <h2>Misión</h2>
+    <p>Ofrecer café de alta calidad, adaptable al gusto de cada cliente, con procesos artesanales que respetan el sabor original del grano.</p>
+
+    <h2>Visión</h2>
+    <p>Ser la marca de café preferida en México por su calidad, autenticidad y atención personalizada al cliente.</p>
+
+    <h2>Valores</h2>
+    <ul>
+      <li>Calidad</li>
+      <li>Compromiso</li>
+      <li>Transparencia</li>
+      <li>Servicio al cliente</li>
+      <li>Pasión por el café</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Productos</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-title">☕ Café en grano</div>
+        <div class="accordion-content">
+          <p>Tostado oscuro o expreso. Granos enteros de alta altitud, sin moler. Ideal para moler al gusto.</p>
+          <img src="https://github.com/usuario/repositorio/blob/main/cafe_grano.jpg?raw=true" alt="Café en grano">
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">☕ Molido grueso (para cafetera)</div>
+        <div class="accordion-content">
+          <p>Perfecto para cafetera. Disponible en tostado oscuro o expreso.</p>
+          <img src="https://github.com/usuario/repositorio/blob/main/molido_grueso.jpg?raw=true" alt="Molido grueso">
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">☕ Molido fino (para café de olla)</div>
+        <div class="accordion-content">
+          <p>Ideal para café de olla tradicional. Tostado a elección.</p>
+          <img src="https://github.com/usuario/repositorio/blob/main/molido_fino.jpg?raw=true" alt="Molido fino">
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">☕ Café con canela (molido grueso)</div>
+        <div class="accordion-content">
+          <p>Infusión cálida con canela. Molido para cafetera, con un toque especiado.</p>
+          <img src="https://github.com/usuario/repositorio/blob/main/con_canela_grueso.jpg?raw=true" alt="Café con canela grueso">
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">☕ Café con canela (molido fino)</div>
+        <div class="accordion-content">
+          <p>Perfecto para café de olla. Aromático y tradicional.</p>
+          <img src="https://github.com/usuario/repositorio/blob/main/con_canela_fino.jpg?raw=true" alt="Café con canela fino">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Agendar Pedido</h2>
+    <form id="cita-form">
+      <input type="text" name="nombre" placeholder="Nombre completo" required />
+      <input type="tel" name="telefono" placeholder="Teléfono" required />
+      <input type="email" name="correo" placeholder="Correo electrónico" required />
+      <input type="date" name="fecha" required />
+      <input type="time" name="hora" required />
+      <textarea name="comentarios" placeholder="Comentarios adicionales..."></textarea>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+    <p id="respuesta" style="margin-top: 1rem;"></p>
+  </section>
+
+  <script>
+    // Acordeón
+    document.querySelectorAll(".accordion-title").forEach(title => {
+      title.addEventListener("click", () => {
+        const content = title.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+
+    // Formulario con fetch
+    const form = document.getElementById("cita-form");
+    const respuesta = document.getElementById("respuesta");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData);
+
+      try {
+        const res = await fetch("https://script.google.com/macros/s/TU_URL_DE_GOOGLE_SHEETS/exec", {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+        form.reset();
+        respuesta.innerText = "✅ Cita agendada correctamente.";
+      } catch (err) {
+        respuesta.innerText = "❌ Hubo un error. Intenta de nuevo.";
+      }
+    });
+  </script>
+</body>
+</html>
